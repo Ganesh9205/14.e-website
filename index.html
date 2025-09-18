@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header id="header">
+        <div id="left"><img src="logo.jpg" alt="" id="logo"></div>
+        <div id="right">
+            <ul id="alllinks">
+                <li><a href="" class="links">Men</a></li>
+                <li><a href="" class="links">Women</a></li>
+                <li><a href="" class="links">Kids</a></li>
+                <li><a href="" class="links">Home</a></li>
+                <li><a href="" class="links">Beauty</a></li>
+                <li><a href="" class="links">Genz</a></li>
+                <li><a href="" class="links">Studio <sup style="color: red;">NEW</sup></a></li>
+                <li><input type="text" placeholder="Search for Products, Brands & More" id="search"></li>
+                <li><i class="fa-regular fa-user"></i></li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><i class="fa-solid fa-bag-shopping"></i></li>
+            </ul>
+        </div>
+    </header>
+
+    <div id="banner">
+
+    </div>
+
+    <div id="main">
+        <div class="maincnt">
+            <img src="tshirts.jpg" alt="" class="maincimg">
+            <p class="maincdesc">Tshirts Starting at 299/-</p>
+        </div>
+        <div class="maincnt">
+            <img src="collegewear.jpg" alt="" class="maincimg">
+            <p class="maincdesc">Hop on to the trend - GENZ College Accessories </p>
+        </div>
+        <div class="maincnt">
+            <img src="footwear.jpg" alt="" class="maincimg">
+            <p class="maincdesc">Never miss a Step with dashing Footwear Collection</p>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+        <div class="footcnt">
+            <p class="fctitle">Reach US</p><br>
+            <ul class="fclist">
+                <li class="fcoptions"><i class="fa-regular fa-envelope"></i>
+                    <p>E-mail</p>
+                </li>
+                <li class="fcoptions"><i class="fa-brands fa-instagram"></i>
+                    <p>Instagram</p>
+                </li>
+                <li class="fcoptions"><i class="fa-brands fa-facebook"></i>
+                    <p>Facebook</p>
+                </li>
+            </ul>
+        </div>
+        <div class="footcnt">
+            <p class="fctitle">Useful Links</p><br>
+            <ul class="fclist">
+                <li class="fcoptions">Blogs</li>
+                <li class="fcoptions">Careers</li>
+                <li class="fcoptions">Sell with us</li>
+            </ul>
+        </div>
+        <div class="footcnt">
+            <p class="fctitle">Experience Myntra on Mobile</p><br>
+            <ul class="fclist">
+                <li class="fcoptions"><i class="fa-brands fa-google-play"></i>
+                    <p>Google Play</p>
+                </li>
+                <li class="fcoptions"><i class="fa-brands fa-app-store-ios"></i></i>
+                    <p>AppStore</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Chatbot -->
+    <img src="chatbot.jpg" alt="" id="chatbot">
+    <div id="cbsection">
+        <div id="cbupsection">
+            <i class="fa-brands fa-bots" style="font-size: 40px;"></i>
+            <p style="font-size: 14px;">here, How may I help?</p>
+            <button id="close"><i class="fa-solid fa-xmark" style="margin-left: 60px; color: black;"></i></button>
+        </div>
+        <div id="cbmidsection">
+
+        </div>
+
+        <div id="cbdownsection">
+            <input type="text" placeholder="Type Something" id="cbinput">
+            <button id="cbsend"><i class="fa-regular fa-paper-plane"></i></button>
+            
+        </div>
+    </div>
+
+    <script>
+        let bot = document.getElementById("chatbot")
+        let cbsection = document.getElementById("cbsection")
+        let close = document.getElementById("close") 
+
+        bot.addEventListener("click", ()=>{
+            cbsection.style.display = "block"
+        })
+
+        close.addEventListener("click", ()=>{
+            cbsection.style.display = "none"
+        }) 
+    </script>
+
+</body>
+
+</html>
